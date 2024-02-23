@@ -17,7 +17,7 @@ class AuthController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function register(Request $request)
+    public function addUser(Request $request)
     {
         $request->validate([
             'name' => 'required|string|max:255',
